@@ -1,113 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Empires and Espresso</title>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Welcome | Empires & Espresso</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Outfit', sans-serif;
-      background-color: #fdf6f0;
-      color: #4b3b2f;
-      display: flex;
-    }
-    nav {
-      width: 250px;
-      background-color: #d9c3af;
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      left: 0;
-      padding: 1.5rem;
+      padding: 0;
       box-sizing: border-box;
     }
-    nav h1 {
-      font-family: 'EB Garamond', serif;
-      font-size: 1.8rem;
-      margin-bottom: 2rem;
+    body, html {
+      height: 100%;
+      font-family: 'Outfit', sans-serif;
     }
-    nav ul {
-      list-style: none;
-      padding: 0;
+    .bg {
+      background-image: url('flowers-background.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
     }
-    nav ul li {
-      margin-bottom: 1rem;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
     }
-    nav ul li a {
-      text-decoration: none;
-      color: #4b3b2f;
-      font-weight: 600;
-    }
-    main {
-      margin-left: 250px;
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: #fff;
       padding: 2rem;
     }
-    section {
-      margin-bottom: 3rem;
-    }
-    h2 {
+    .content h1 {
       font-family: 'EB Garamond', serif;
-      font-size: 2rem;
-      color: #6b4d3c;
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
-    footer {
-      margin-top: 4rem;
-      border-top: 1px solid #ccc;
-      padding-top: 1rem;
-      font-size: 0.9rem;
-    }
-    .contact {
-      background-color: #f0e2d0;
-      padding: 1rem;
-      border-radius: 8px;
-    }
-    .about {
+    .content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
       font-style: italic;
-      color: #6b4d3c;
+    }
+    .content a {
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      background-color: #e0c9ba;
+      color: #3d2e27;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .content a:hover {
+      background-color: #c2a998;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <h1>Empires & Espresso</h1>
-    <ul>
-      <li><a href="#unit1">Unit 1</a></li>
-      <li><a href="#unit2">Unit 2</a></li>
-      <li><a href="#unit3">Unit 3</a></li>
-      <li><a href="#unit4">Unit 4</a></li>
-      <li><a href="#unit5">Unit 5</a></li>
-      <li><a href="#unit6">Unit 6</a></li>
-      <li><a href="#unit7">Unit 7</a></li>
-      <li><a href="#unit8">Unit 8</a></li>
-      <li><a href="#unit9">Unit 9</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section class="about">
-      <p>Made by a tired but passionate history student who deserves an espresso and a 5 💅☕</p>
-    </section>
-    <section id="unit1">
-      <h2>Unit 1: The Global Tapestry (1200–1450)</h2>
-      <p>✨ Your notes and resources go here ✨</p>
-    </section>
-    <section id="unit2">
-      <h2>Unit 2: Networks of Exchange</h2>
-      <p>Silk Road? More like Slay Road. Add your content here.</p>
-    </section>
-    <!-- Add similar sections for Units 3-9 -->
-
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <p>Have memes? DBQ trauma? Historical tea to spill? Reach out at <strong>khyati.knows.it.all@example.com</strong></p>
-    </section>
-
-    <footer>
-      &copy; 2025 Empires and Espresso. All rights reserved ☕🌍
-    </footer>
-  </main>
+  <div class="bg">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Empires & Espresso</h1>
+      <p>Because world domination starts with a latte.</p>
+      <a href="plan.html">Enter</a>
+    </div>
+  </div>
 </body>
 </html>
