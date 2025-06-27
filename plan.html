@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pick Your Plan | Empires & Espresso</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+      background: url('A_digital_graphic_design_features_a_textured_beige.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      color: #4b3b2f;
+    }
+    h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .plans {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .plan {
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      width: 90%;
+      max-width: 400px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .plan:hover {
+      transform: translateY(-5px);
+    }
+    .plan-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .plan-desc {
+      font-style: italic;
+      color: #6b4d3c;
+    }
+    .footer-quote {
+      margin-top: 3rem;
+      font-style: italic;
+      color: #3d2e27;
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose Your Journey</h1>
+  <div class="plans">
+    <div class="plan" onclick="location.href='plan1.html'">
+      <div class="plan-title">☕ Plan #1: Around the World in 60 Days</div>
+      <div class="plan-desc">For the girlies who plan ahead. This one’s for the romantics with planners and pastel highlighters.</div>
+    </div>
+    <div class="plan" onclick="location.href='plan2.html'">
+      <div class="plan-title">✈️ Plan #2: Around the World in a Private Jet</div>
+      <div class="plan-desc">For the panic-fueled queens who waited till the last unit. You may crash, but you’ll crash fabulously.</div>
+    </div>
+  </div>
+  <div class="footer-quote">
+    “Pick your poison, babe, I’m poison either way.” – Madame Swift
+  </div>
+</body>
+</html>
